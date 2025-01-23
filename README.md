@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+### First React Application
+`Step-1`-> Imported react, useState,useEffect from react library.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`Step-2`-> Created a functional component called `App`.
 
-## Available Scripts
+`Step-3`-> Used OMDb.api for free api.
 
-In the project directory, you can run:
+`Step-4`-> Used useEffect to load the data from api at start of the application.
 
-### `npm start`
+`Step-5`-> Created a async function to fetch the data from api.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`Step-6`-> Created a search bar for searching the movie.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`Step-7`-> Created a div with <i> className</i>=`Container` to display the movie data statically.
 
-### `npm test`
+`Step-8`-> As the static approach displays only one movie at a time , we need to create a dynamic approach to display all the movies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`Step-9`-> So I created a <i>.jsx</i> file called `MovieCard.jsx` to display all the movies dynamically and imported it into `App.js`.
 
-### `npm run build`
+`Step-10`-> Created a state to store the movie data and used map function to display all the movies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`Step-11`-> To make search bar work created a state to store <i>`searchTerm`</i>.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`Step-12`-> And to make search icon work used onClick function to search the movie with title stored in <i>`searchTerm`</i>.
